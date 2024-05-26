@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 import { graphql } from "gatsby";
 
 export default function ProjectDetails({ data }) {
@@ -10,10 +10,11 @@ export default function ProjectDetails({ data }) {
         {data.markdownRemark.frontmatter.title}
       </Typography>
       <br />
+      <Divider/>
       <Typography
         dangerouslySetInnerHTML={{
           __html: data.markdownRemark.html,
-        }}></Typography>
+        }}/>
     </Box>
   );
 }
