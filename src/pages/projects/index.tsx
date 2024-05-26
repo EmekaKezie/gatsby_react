@@ -11,6 +11,7 @@ export default function ProjectsPage({ data }: any) {
       <Box component="h2">Projects</Box>
       <Box component="div">List of projects</Box>
       <br/>
+      <br/>
       <Box>
         {projects?.map((project: any, index: number) => (
           <Link to={`/projects/${project.frontmatter.slug}`} key={index}>
