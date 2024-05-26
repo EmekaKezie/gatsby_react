@@ -22,7 +22,6 @@ export default function ProjectDetails({ data }) {
 export const query = graphql`
   query ProjectsPage($slug: String) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-      html
       frontmatter {
         title
       }
