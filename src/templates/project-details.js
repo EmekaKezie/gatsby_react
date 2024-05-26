@@ -2,11 +2,12 @@ import React from "react";
 import { Box, Divider, Typography } from "@mui/material";
 import { graphql } from "gatsby";
 
-export default function ProjectDetails() {
+export default function ProjectDetails({ data }) {
+  console.log(data);
   return (
     <Box>
       <Typography component={"h2"}>
-        {/* {data.markdownRemark.frontmatter.title} */}
+        {data.markdownRemark.frontmatter.title}
       </Typography>
       <br />
       <Divider/>
@@ -18,12 +19,12 @@ export default function ProjectDetails() {
   );
 }
 
-// export const query = graphql`
-//   query ProjectsPage($slug: String) {
-//     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-//       frontmatter {
-//         title
-//       }
-//     }
-//   }
-// `;
+export const query = graphql`
+  query ProjectsPage($slug: String) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+      frontmatter {
+        title
+      }
+    }
+  }
+`;
