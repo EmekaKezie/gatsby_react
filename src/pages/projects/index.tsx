@@ -3,8 +3,8 @@ import { Box, Typography } from "@mui/material";
 import { Link, graphql } from "gatsby";
 import Layout from "../../components/Layout";
 
-export default function ProjectsPage({ data }: any) {
-  const projects = data.allMarkdownRemark.nodes;
+export default function ProjectsPage() {
+  //const projects = data.allMarkdownRemark.nodes;
   
   return (
     <Layout>
