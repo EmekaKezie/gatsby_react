@@ -8,11 +8,12 @@ const AboutPage = () => {
     <Layout>
       <Box>This is about Page</Box>
       <Box>
-        <StaticImage alt="mini-banner" src="../images/banner2.jpg" />
+        {/* <StaticImage alt="mini-banner" src="/banner2.jpg" /> */}
+        <img src="/banner2.jpg"/>
       </Box>
     </Layout>
   );
 };
 
 export default AboutPage;
-export const Head = () => <title>About us</title>;
+// export const Head = () => <title>About us</title>;

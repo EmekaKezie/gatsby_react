@@ -16,6 +16,9 @@ export default function Navbar() {
         <Typography>
           <Link to="/members">Members</Link>
         </Typography>
+        <Typography>
+          <Link to="/projects">Projects</Link>
+        </Typography>
       </Box>
     </Box>
   );
