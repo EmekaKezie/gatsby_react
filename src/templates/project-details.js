@@ -11,10 +11,10 @@ export default function ProjectDetails({ data }) {
       </Typography>
       <br />
       <Divider/>
-      <Typography
+      {/* <Typography
         dangerouslySetInnerHTML={{
           __html: data.markdownRemark.html,
-        }}/>
+        }}/> */}
     </Box>
   );
 }
